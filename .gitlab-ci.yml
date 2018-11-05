@@ -2,6 +2,6 @@ image: buildpack-deps:stretch
 
 release:
   only:
-    - release@cathands-sendai/gift/document
+    - release@getto-systems-labo/document
   script:
     - ./bin/push_tags.sh
