@@ -1,0 +1,7 @@
+image: buildpack-deps:stretch
+
+release:
+  only:
+    - release@cathands-sendai/gift/document
+  script:
+    - ./bin/push_tags.sh
