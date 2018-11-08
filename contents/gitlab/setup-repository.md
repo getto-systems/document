@@ -38,7 +38,6 @@
 
 ```bash
 export APP_ROOT=$(pwd)
-
 export GIT_RELEASE_REQUEST_TARGET=release
 ```
 
