@@ -21,8 +21,8 @@
 
 ### 構成
 
+- release ブランチにコミットしたら tag を作成
 - GitLab → BitBucket (バックアップ)
-- release ブランチにコミットしたらバックアップホストに push
 
 
 ### 手順
