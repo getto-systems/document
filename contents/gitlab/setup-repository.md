@@ -5,6 +5,12 @@
 - 状況 : ユーザー数が少ない場合、GitLab の無料プランが使える
 - 決定 : GitLab でホストして CI を整える
 
+
+```
+git clone https://gist.github.com/b3db4b58731bed1820c3d88534bac62a.git
+```
+
+
 ###### Table of Contents
 
 - [前提](#user-content-前提)
@@ -33,9 +39,6 @@
 - GITLAB_ACCESS_TOKEN、BITBUCKET_ACCESS_TOKEN 登録
 - gitlab-ci テンプレート追加
 
-```
-git clone https://gist.github.com/b3db4b58731bed1820c3d88534bac62a.git
-```
 
 #### .envrc
 
