@@ -2,6 +2,11 @@
 
 ###### Table of Contents
 
-- [リポジトリ構築手順](#user-content-リポジトリ構築手順)
+- [GitLab](#user-content-GitLab)
+
+
+### GitLab
+
+- [リポジトリ構築手順](contents/gitlab/setup-repository.md)
 
 [TOP](#user-content-document-getto-systems)
