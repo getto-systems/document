@@ -29,9 +29,9 @@
 
 1. GitLab リポジトリ作成
 1. 個人用 fork 作成
-1. BitBucket (GitHub) にリポジトリ作成、 push
+1. GitHub (BitBucket) にリポジトリ作成、 push
 1. release ブランチ作成、protect
-1. `GITLAB_ACCESS_TOKEN`、`BITBUCKET_ACCESS_TOKEN` 登録
+1. `GITLAB_ACCESS_TOKEN`、`GITHUB(BITBUCKET)_ACCESS_TOKEN` 登録
 1. gitlab-ci テンプレート追加
 
 ```
@@ -63,7 +63,7 @@ release:
 ```bash
 #!/bin/bash
 
-git remote add super https://gett-systems:$GITLAB_ACCESS_TOKEN@gitlab.com/<project>.git
+git remote add super https://getto-systems:$GITLAB_ACCESS_TOKEN@gitlab.com/<project>.git
 git remote add github https://getto-systems:$GITHUB_ACCESS_TOKEN@github.com/getto-systems/<path>.git
 git tag $(cat .release-version)
 git push super HEAD:master --tags
