@@ -32,7 +32,11 @@
 - BitBucket (GitHub) にリポジトリ作成
 - release ブランチ作成、protect
 - GITLAB_ACCESS_TOKEN、BITBUCKET_ACCESS_TOKEN 登録
-- gitlab-ci テンプレート追加 `git clone https://gist.github.com/b3db4b58731bed1820c3d88534bac62a.git`
+- gitlab-ci テンプレート追加
+
+```
+git clone https://gist.github.com/b3db4b58731bed1820c3d88534bac62a.git
+```
 
 
 #### .envrc
