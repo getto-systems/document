@@ -31,7 +31,7 @@
 - 個人用 fork 作成
 - BitBucket (GitHub) にリポジトリ作成
 - release ブランチ作成、protect
-- GITLAB_ACCESS_TOKEN、BITBUCKET_ACCESS_TOKEN 登録
+- `GITLAB_ACCESS_TOKEN`、`BITBUCKET_ACCESS_TOKEN` 登録
 - gitlab-ci テンプレート追加
 
 ```
