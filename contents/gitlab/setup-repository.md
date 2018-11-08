@@ -27,12 +27,12 @@
 
 ### 手順
 
-- GitLab リポジトリ作成
-- 個人用 fork 作成
-- BitBucket (GitHub) にリポジトリ作成
-- release ブランチ作成、protect
-- `GITLAB_ACCESS_TOKEN`、`BITBUCKET_ACCESS_TOKEN` 登録
-- gitlab-ci テンプレート追加
+1. GitLab リポジトリ作成
+1. 個人用 fork 作成
+1. BitBucket (GitHub) にリポジトリ作成
+1. release ブランチ作成、protect
+1. `GITLAB_ACCESS_TOKEN`、`BITBUCKET_ACCESS_TOKEN` 登録
+1. gitlab-ci テンプレート追加
 
 ```
 git clone https://gist.github.com/b3db4b58731bed1820c3d88534bac62a.git
