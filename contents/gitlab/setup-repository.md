@@ -7,14 +7,23 @@
 
 ###### Table of Contents
 
+- [前提](#user-content-前提)
 - [構成](#user-content-構成)
 - [手順](#user-content-手順)
 
+
+### 前提
+
+- direnv で環境変数を設定
+- git-release-request でバージョンアップコミットを作成
+
+
 ### 構成
 
+- GitLab → BitBucket (バックアップ)
+- release ブランチにコミットしたらバックアップホストに push
 
 
-[TOP](#user-content-リポジトリ構築手順)
 ### 手順
 
 - GitLab リポジトリ作成
