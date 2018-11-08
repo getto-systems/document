@@ -22,7 +22,7 @@
 ### 構成
 
 - release ブランチにコミットしたら tag を作成
-- GitLab → BitBucket (バックアップ)
+- GitLab → GitHub (BitBucket) : バックアップ
 
 
 ### 手順
