@@ -69,5 +69,3 @@ git tag $(cat .release-version)
 git push super HEAD:master --tags
 git push github HEAD:master --tags
 ```
-
-[TOP](#user-content-リポジトリ構築手順)
