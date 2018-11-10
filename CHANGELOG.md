@@ -1,3 +1,7 @@
+# Version : 0.3.0
+
+add: gitlab/setup-repository, development/setup
+
 # Version : 0.2.1
 
 test release
