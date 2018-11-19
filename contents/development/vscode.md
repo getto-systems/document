@@ -56,7 +56,7 @@
 ```json
 {
   "workbench.colorTheme": "Solarized Light",
-  "editor.fontFamily": "'APJapanesefontT(ME)', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'APJapanesefontT', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 16,
   "editor.lineHeight": 16,
   "explorer.confirmDelete": false,
