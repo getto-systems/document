@@ -1,3 +1,7 @@
+# Version : 0.3.1
+
+fix: variables
+
 # Version : 0.3.0
 
 add: gitlab/setup-repository, development/setup

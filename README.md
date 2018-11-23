@@ -9,6 +9,7 @@
 ### 開発環境
 
 - [開発環境構築手順](contents/development/setup.md)
+- [VSCode 導入手順](contents/development/vscode.md)
 
 
 ### GitLab
