@@ -2,7 +2,7 @@
 
 ###### Table of Contents
 
-- [翻訳](#translate.md)
+- [翻訳](contents/translate.md)
 - [開発環境](#user-content-開発環境)
 - [GitLab](#user-content-GitLab)
 
