@@ -2,9 +2,14 @@
 
 ###### Table of Contents
 
-- [翻訳](contents/translate.md)
+- [翻訳](#user-content-翻訳)
 - [開発環境](#user-content-開発環境)
 - [GitLab](#user-content-GitLab)
+
+
+### 翻訳
+
+- [翻訳](contents/translate.md)
 
 
 ### 開発環境
