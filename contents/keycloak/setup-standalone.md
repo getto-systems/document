@@ -134,10 +134,6 @@ index.html にアクセスすると keycloak のログイン画面にリダイ�
 -----END CERTIFICATE-----
 ```
 
-「Public key」ボタンの内容を使う場合は `BEGIN PUBLIC KEY` とすれば良いのかな？
-確認していない。
-
-
 #### ruby で検証
 
 `jwt` gem を使って以下のように検証できる。
