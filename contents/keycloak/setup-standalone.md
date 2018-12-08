@@ -10,6 +10,7 @@
 
 - [Getting Started](#user-content-Getting Started)
 - [javascript adapter で接続](#user-content-javascript adapter で接続)
+- [jwt を ruby で検証](#user-content-jwt を ruby で検証)
 
 
 ### Getting Started
@@ -113,3 +114,44 @@ keycloak.init({ onLoad: "login-required" })
 
 index.html にアクセスすると keycloak のログイン画面にリダイレクトする。
 ログインすると index.html が表示されるはず。
+
+
+### jwt を ruby で検証
+
+#### public key の用意
+
+ログインに成功した後、developper console で `keycloak.token` をみてみると、keycloak が発行した jwt が取得できる。
+この jwt を ruby で検証してみる。
+
+管理画面の「Realm Settings」の「Keys」タブから RSA public key をコピーできる。
+これを `rsa.pem` として保存。
+
+- rsa.pem
+
+```
+-----BEGIN CERTIFICATE-----
+(ここに Certificate ボタンで表示された内容をコピー)
+-----END CERTIFICATE-----
+```
+
+「Public key」ボタンの内容を使う場合は `BEGIN PUBLIC KEY` とすれば良いのかな？
+確認していない。
+
+
+#### ruby で検証
+
+`jwt` gem を使って以下のように検証できる。
+
+```ruby
+require "jwt"
+
+token = ARGV[0]
+puts token
+
+cert = OpenSSL::X509::Certificate.new File.read("rsa.pem")
+
+result = JWT.decode token, cert.public_key, true, { algorithm: "RS256" }
+puts result
+
+result["resource_access"]["demoapp"]["roles"] # => ここに Client roles
+```
