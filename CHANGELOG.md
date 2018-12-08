@@ -1,3 +1,7 @@
+# Version : 0.4.0
+
+add: translate, keycloak
+
 # Version : 0.3.1
 
 fix: variables
