@@ -27,4 +27,4 @@
 
 ### Keycloak
 
-- [standalone で動かすまで](contents/gitlab/setup-standalone.md)
+- [standalone で動かすまで](contents/keycloak/setup-standalone.md)
