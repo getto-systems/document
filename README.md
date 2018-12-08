@@ -5,6 +5,7 @@
 - [翻訳](#user-content-翻訳)
 - [開発環境](#user-content-開発環境)
 - [GitLab](#user-content-GitLab)
+- [Keycloak](#user-content-Keycloak)
 
 
 ### 翻訳
@@ -21,3 +22,9 @@
 ### GitLab
 
 - [リポジトリ構築手順](contents/gitlab/setup-repository.md)
+
+
+
+### Keycloak
+
+- [standalone で動かすまで](contents/gitlab/setup-standalone.md)
