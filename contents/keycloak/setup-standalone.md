@@ -25,11 +25,16 @@
 まず standalone で起動する
 
 ```
-$ ./bin/standalone.sh -b 0.0.0.0
+$ ./bin/standalone.sh -b 0.0.0.0 -Djava.security.egd=file:/dev/urandom
 ```
 
 `-b 0.0.0.0` は `0.0.0.0` に bind する設定。
 コンテナ内で動かすため、外からアクセスできるようにする必要がある。
+
+`-Djava.security.egd=file:/dev/urandom` はランダム生成機に `/dev/urandom` を使うように指示するもの。
+
+> On Linux, it is recommended to use /dev/urandom as a source of random data to prevent Keycloak hanging due to lack of available entropy, unless /dev/random usage is mandated by your security policy.
+> To achieve that on Oracle JDK 8 and OpenJDK 8, set the java.security.egd system property on startup to file:/dev/urandom.
 
 
 #### ユーザーの作成

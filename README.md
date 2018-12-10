@@ -28,3 +28,4 @@
 ### Keycloak
 
 - [standalone で動かすまで](contents/keycloak/setup-standalone.md)
+- [database に接続する](contents/keycloak/connect-database.md)
