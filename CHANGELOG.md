@@ -1,3 +1,7 @@
+# Version : 0.5.0
+
+add: keycloak/connect-database
+
 # Version : 0.4.0
 
 add: translate, keycloak
