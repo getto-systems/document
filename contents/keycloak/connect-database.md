@@ -41,7 +41,7 @@ grant all on keycloak_dev.* to 'keycloak_dev'@'%';
 <module xmlns="urn:jboss:module:1.3" name="com.mysql">
     <resources>
         <resource-root path="mysql-connector-java-*.jar" />
-        </resources>
+    </resources>
     <dependencies>
         <module name="javax.api"/>
         <module name="javax.transaction.api"/>
@@ -72,7 +72,7 @@ h2 の方は削除してしまって良い。
 
 ```xml
 <datasource jndi-name="java:/jboss/datasources/KeycloakDS" pool-name="KeycloakDS" enabled="true">
-    <connection-url>jdbc:mysql://localhost:3306/keycloak?useSSL=false&amp;characterEncoding=UTF-8</connection-url>
+    <connection-url>jdbc:mysql://localhost:3306/keycloak?useSSL=true&amp;characterEncoding=UTF-8</connection-url>
     <driver>mysql</driver>
     <pool>
         <min-pool-size>5</min-pool-size>
@@ -92,8 +92,12 @@ h2 の方は削除してしまって良い。
 
 `ExampleDS` の方は削除してしまって良い。
 
+本番環境では proxy で接続するので `useSSL=false` で良い。
+
 
 ### ssl 証明書の設定
+
+- 本番環境では proxy で接続するので必要ない
 
 ssl のキー `server-ca.pem`, `client-key.pem`, `client-cert.pem` を用意しておく。
 
