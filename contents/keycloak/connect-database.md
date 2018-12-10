@@ -21,8 +21,8 @@
 ユーザーを作成する。
 
 ```sql
-create user 'keycloak_dev'@'%' identified by 'keycloak_dev';
-grant all on keycloak_dev.* to 'keycloak_dev'@'%';
+create user 'keycloak'@'%' identified by 'keycloak';
+grant all on keycloak.* to 'keycloak'@'%';
 ```
 
 データベースの文字コードは `utf8` を選択する。
