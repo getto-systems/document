@@ -1,3 +1,7 @@
+# Version : 0.6.1
+
+fix: jgroups #keycloak
+
 # Version : 0.6.0
 
 add: deploy-prodyction.md
