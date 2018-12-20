@@ -4,6 +4,7 @@
 - 目的 : keycloak を本番環境で稼働させる
 - 状況 : GKE にクラスタは用意済み
 - 決定 : GKE の k8s クラスタに keycloak をデプロイする
+- 経過 : replica: 1 で運用することにした
 
 
 ###### Table of Contents
@@ -50,6 +51,8 @@ subsystem `urn:jboss:domain:undertow:6.0` を探して `http-listener` の設定
 
 
 ### jboss クラスタのディスカバリー
+
+- この内容は使用せずに、replicas: 1 で運用することにした
 
 pod は問題なく起動するが、このままではログイン後にリダイレクトループになった。
 おそらく、セッションを保存している infinispan がうまく参照できないため、セッションが保存されているノードにアクセスした時はログイン後画面にリダイレクトして、そうでないときはログイン前画面にリダイレクトして、を繰り返したのだと思う。
@@ -153,8 +156,12 @@ TCP でノードを見つけて、データベースに記録する、という�
 <socket-binding name="jgroups-tcp" interface="public" port="7600"/>
 ```
 
+#### 結局やめた
 
-#### deployment
+リダイレクトループが止まらなかったので replicas: 1 で運用することにした。
+
+
+### deployment
 
 ```yaml
 - name: keycloak
@@ -191,10 +198,6 @@ TCP でノードを見つけて、データベースに記録する、という�
         secretKeyRef:
           name: getto-keycloak-db
           key: password
-    - name: HOST_IP
-      valueFrom:
-        fieldRef:
-          fieldPath: status.podIP
 ```
 
 こんな設定でデプロイする。
