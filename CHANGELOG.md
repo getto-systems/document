@@ -1,3 +1,7 @@
+# Version : 0.7.0
+
+add: rubygems
+
 # Version : 0.6.1
 
 fix: jgroups #keycloak
