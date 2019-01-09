@@ -3,6 +3,7 @@
 ###### Table of Contents
 
 - [翻訳](#user-content-翻訳)
+- [データ修正](#user-content-データ修正)
 - [開発環境](#user-content-開発環境)
 - [GitLab](#user-content-GitLab)
 - [Keycloak](#user-content-Keycloak)
@@ -12,6 +13,11 @@
 ## 翻訳
 
 - [翻訳](contents/translate.md)
+
+
+## データ修正
+
+- [データ修正](contents/modify-data.md)
 
 
 ## 開発環境
